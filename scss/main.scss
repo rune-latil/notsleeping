@@ -8,6 +8,7 @@ body{
 
 .wrap{
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -15,7 +16,7 @@ body{
 
 }
 
-.main{
+#main{
     width: 80%;
     text-align: center;
     position: relative;
@@ -46,4 +47,45 @@ body{
         transition: 1s ease-out;
         opacity: 0.6; 
     }
+
 }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 100%; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 100%; }
+    to { opacity: 0%; }
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 100%; }
+}
+
+@-webkit-keyframes fadeOut {
+    from { opacity: 100%; }
+    to { opacity: 0%; }
+}
+
+#talk{ 
+    display: none;
+    width: 80%;
+    height:80%;
+    max-width: 1126px;
+    max-height:936px;
+    background: no-repeat center/cover url('/images/221224-2.jpg');
+
+    .imgBox{
+        margin-bottom:-4px;
+    }
+    .talkBox{
+        background: #333;
+        width:100%;
+        height:30%;
+    }
+}
+
+

@@ -28,15 +28,16 @@ body {
 
 .wrap {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh; }
 
-.main {
+#main {
   width: 80%;
   text-align: center;
   position: relative; }
-  .main img {
+  #main img {
     width: 100%;
     max-width: 1126px; }
 
@@ -57,5 +58,39 @@ body {
   .start:hover {
     transition: 1s ease-out;
     opacity: 0.6; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 100%; } }
+@keyframes fadeOut {
+  from {
+    opacity: 100%; }
+  to {
+    opacity: 0%; } }
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 100%; } }
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 100%; }
+  to {
+    opacity: 0%; } }
+#talk {
+  display: none;
+  width: 80%;
+  height: 80%;
+  max-width: 1126px;
+  max-height: 936px;
+  background: no-repeat center/cover url("/images/221224-2.jpg"); }
+  #talk .imgBox {
+    margin-bottom: -4px; }
+  #talk .talkBox {
+    background: #333;
+    width: 100%;
+    height: 30%; }
 
 /*# sourceMappingURL=main.css.map */
