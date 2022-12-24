@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+img {
+  border: 0; }
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: #000; }
+
+.hidden {
+  display: none; }
+
+button {
+  background: none;
+  border: 0; }
+
+input {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #111; }
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+
+.main {
+  width: 80%;
+  text-align: center;
+  position: relative; }
+  .main img {
+    width: 100%;
+    max-width: 1126px; }
+
+.start {
+  background: no-repeat center/cover url("/images/button.png");
+  width: 140px;
+  height: 40px;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  margin-left: -70px;
+  font-family: 'Mr Dafoe', cursive;
+  font-size: 23px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #fff, 0 0 #fff, -1px -1px #fff;
+  color: #283c54;
+  cursor: pointer; }
+  .start:hover {
+    transition: 1s ease-out;
+    opacity: 0.6; }
+
+/*# sourceMappingURL=main.css.map */
