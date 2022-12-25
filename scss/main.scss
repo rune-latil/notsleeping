@@ -29,6 +29,8 @@ body{
     align-items: center;
 
     height: 100vh;
+    padding:20px 0;
+    box-sizing: border-box;
 
 }
 
@@ -39,7 +41,7 @@ body{
 
     img{
         width: 100%;
-        max-width: 1126px;
+        max-width: 1024px;
     }
 }
 
@@ -143,5 +145,11 @@ body{
 
 #result{
     display: none;
+    width: 80%;
+    text-align: center;
+    img{
+        width: 100%;
+        max-width: 1024px;
+    }
 }
 

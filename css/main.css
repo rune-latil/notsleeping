@@ -45,7 +45,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; }
+  height: 100vh;
+  padding: 20px 0;
+  box-sizing: border-box; }
 
 #main {
   width: 80%;
@@ -53,7 +55,7 @@ body {
   position: relative; }
   #main img {
     width: 100%;
-    max-width: 1126px; }
+    max-width: 1024px; }
 
 .start {
   background: no-repeat center/cover url("/images/button.png");
@@ -138,6 +140,11 @@ body {
       opacity: 0.5; }
 
 #result {
-  display: none; }
+  display: none;
+  width: 80%;
+  text-align: center; }
+  #result img {
+    width: 100%;
+    max-width: 1024px; }
 
 /*# sourceMappingURL=main.css.map */
