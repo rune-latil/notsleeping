@@ -16,6 +16,7 @@
 
 body{
     background-color: #111;
+    word-break:keep-all;
 }
 
 ::selection{ background: rgb(5, 92, 92); }
@@ -113,15 +114,20 @@ body{
         font-size:17px;
     }
 
-    .erica{
+    .erica, .carlota{
         color: #C67B64;
         font-family: 'Cafe24Dangdanghae';
         font-size: 21px;
         margin-bottom:20px;
     }
 
+    .carlota{
+        color:#B4998E;
+    }
+
     .nextBtn{
         position: relative;
+        z-index: 3;
         left:98%;
         margin-top:40px;
         font-weight: bold;
@@ -135,4 +141,7 @@ body{
     }
 }
 
+#result{
+    display: none;
+}
 

@@ -34,7 +34,8 @@ input {
   font-weight: normal;
   font-style: normal; }
 body {
-  background-color: #111; }
+  background-color: #111;
+  word-break: keep-all; }
 
 ::selection {
   background: #055c5c; }
@@ -116,13 +117,16 @@ body {
     color: #e1e1e1;
     font-family: 'Cafe24Oneprettynight';
     font-size: 17px; }
-  #talk .erica {
+  #talk .erica, #talk .carlota {
     color: #C67B64;
     font-family: 'Cafe24Dangdanghae';
     font-size: 21px;
     margin-bottom: 20px; }
+  #talk .carlota {
+    color: #B4998E; }
   #talk .nextBtn {
     position: relative;
+    z-index: 3;
     left: 98%;
     margin-top: 40px;
     font-weight: bold;
@@ -132,5 +136,8 @@ body {
     #talk .nextBtn:hover {
       transition: 1s ease-out;
       opacity: 0.5; }
+
+#result {
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */
