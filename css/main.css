@@ -23,8 +23,21 @@ input {
   margin: 0;
   padding: 0; }
 
+@font-face {
+  font-family: 'Cafe24Dangdanghae';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.2/Cafe24Dangdanghae.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Cafe24Oneprettynight';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 body {
   background-color: #111; }
+
+::selection {
+  background: #055c5c; }
 
 .wrap {
   display: flex;
@@ -85,12 +98,39 @@ body {
   height: 80%;
   max-width: 1126px;
   max-height: 936px;
-  background: no-repeat center/cover url("/images/221224-2.jpg"); }
+  box-sizing: border-box;
+  background: no-repeat center/cover url("/images/221224-2.jpg");
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start; }
   #talk .imgBox {
     margin-bottom: -4px; }
+    #talk .imgBox img {
+      max-width: 80%; }
   #talk .talkBox {
-    background: #333;
+    background: rgba(0, 0, 0, 0.6);
     width: 100%;
-    height: 30%; }
+    box-sizing: border-box;
+    height: 210px;
+    padding: 40px;
+    color: #e1e1e1;
+    font-family: 'Cafe24Oneprettynight';
+    font-size: 17px; }
+  #talk .erica {
+    color: #C67B64;
+    font-family: 'Cafe24Dangdanghae';
+    font-size: 21px;
+    margin-bottom: 20px; }
+  #talk .nextBtn {
+    position: relative;
+    left: 98%;
+    margin-top: 40px;
+    font-weight: bold;
+    color: #c4c4c4;
+    font-size: 20px;
+    cursor: pointer; }
+    #talk .nextBtn:hover {
+      transition: 1s ease-out;
+      opacity: 0.5; }
 
 /*# sourceMappingURL=main.css.map */

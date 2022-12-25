@@ -1,10 +1,25 @@
 @import '_base';
 
 @import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+@font-face {
+    font-family: 'Cafe24Dangdanghae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.2/Cafe24Dangdanghae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body{
     background-color: #111;
 }
+
+::selection{ background: rgb(5, 92, 92); }
+
 
 .wrap{
     display:flex;
@@ -76,15 +91,47 @@ body{
     height:80%;
     max-width: 1126px;
     max-height:936px;
+    box-sizing: border-box;
     background: no-repeat center/cover url('/images/221224-2.jpg');
+
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
 
     .imgBox{
         margin-bottom:-4px;
+        img{ max-width:80%; }
     }
     .talkBox{
-        background: #333;
+        background: rgba(0,0,0,0.6);
         width:100%;
-        height:30%;
+        box-sizing: border-box;
+        height:210px;
+        padding:40px;
+        color:#e1e1e1;
+        font-family: 'Cafe24Oneprettynight';
+        font-size:17px;
+    }
+
+    .erica{
+        color: #C67B64;
+        font-family: 'Cafe24Dangdanghae';
+        font-size: 21px;
+        margin-bottom:20px;
+    }
+
+    .nextBtn{
+        position: relative;
+        left:98%;
+        margin-top:40px;
+        font-weight: bold;
+        color:#c4c4c4;
+        font-size: 20px;
+        cursor: pointer;
+        &:hover{
+            transition: 1s ease-out;
+            opacity: 0.5;
+        }
     }
 }
 
